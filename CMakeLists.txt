@@ -4,7 +4,7 @@ project(bc-ur
     DESCRIPTION "UR reference library in C++"
     LANGUAGES C CXX
 )
-
+set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 option(ENABLE_TESTS "Build bc-ur tests" FALSE)
 
 if(NOT CMAKE_BUILD_TYPE)
